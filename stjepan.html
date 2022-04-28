@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>MMT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="myNavbar">
+            <ul class="nav">
+                <li><a href="luka.html" id="luka">Luka Valentić </a> </li>
+                <li><a href="stjepan.html" id="stjepan">Stjepan Strmečki</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <img src="stjepan.jpg" class="img-responsive" height="200px" width="200px">
+        </div>
+        <div class="text">
+            <p>Ime i prezime: Stjepan Strmecki</p>
+            <p>Datum rođenja: 15.06.2000.</p>
+            <p>Spol: Muški</p>
+            <p>Hobi: <a href="https://en.wikipedia.org/wiki/Handball">Rukomet</a> <a href="https://en.wikipedia.org/wiki/Service_(motor_vehicle)">automobili</a></p>
+            <p><a href="https://nasice.hr/">Mjesto rođenja: Našice</a></p>
+            <p><a href="https://nasice.hr/">Mjesto stanovanja: Našice</a></p>
+            <p><a href="http://os-kralja-tomislava-na.skole.hr/">Osnovna škola: OŠ Kralja Tomislava Našice</a></p>
+            <p><a href="http://ss-ikrsnjavoga-nasice.skole.hr/">Srednja škola:Srednja škola Isidora Kršnjavog-Tehničar za računarstvo-Našice</a></p>
+            <p><a href="https://www.ferit.unios.hr/">Fakultet: FERIT</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="ff5 container-fluid">
+        <div>
+            <div class="container">
+                <h2>Radno iskustvo</h2>
+                <ul>
+                    <h4>Web developer - Erasmus+</h4>
+                    <li> 16. VELJAČA 2019. – 23. VELJAČA 2019. – Braga, Portugal</li>
+                    <h4>Internship u Recicla PC</h4>
+                    <li> 23. VELJAČA 2019. – 09. OŽUJAK 2019. – Braga, Portugal </li>
+                    <h4>Voditelj rukometne statistike HRS-a</h4>
+                    <li> 2018. – 2020. – Našice(RK Nexe), Hrvatska</li>
+                    <h4>Rukovoditelj službenih dokumenata(Praktikant)</h4>
+                    <li>HEP.d.o.o - 15. SRPANJ 2018. – 30. SRPANJ 2018. – Našice, Hrvatska </li>
+                </ul>
+                <h2>Digitalne vještine</h2>
+                <ul>
+                    <li>Osnove 3D modeliranja (Blender) </li>
+                    <li>Poznavanje rada u Visual Studio te Visual Studio Code okruženju</li>
+                    <li>Društvene mreže (Facebook, Instagram, Viber, WhatsApp, Linkedin)</li>
+                    <li>Dobro znanje rada u HTML, CSS, JavaScript programskim jezicima </li>
+                    <li>MS Office (MS Word, MS Powerpoint, MS Excel, MS Publisher, MS Outlook, MS Access, MS Teams) </li>
+                    <li>Google (Google Meet, Google Docs, Google Classrom, Google Forms, Google Drive, Google Slide)</li>
+                    <li>Rad u Java programskom jeziku</li>
+                    <li>Rad u programskom jeziku "C"</li>
+                    <li>Osnove programiranja (Python, C++, C#)</li>
+                    <li>Komunikacijski programi (Skype Zoom TeamViewer)
+                    </li>
+                </ul>
+                <h2>Osobne vještine</h2>
+                <ul>
+                        <li>Timski rad</li>
+                        <li>Organiziran i odgovoran</li>
+                        <li>Sposoban raditi u timu</li>
+                        <li>S lakocom prihvacam i rjesavam nove izazove kroz koje napredujem </li>
+                        <li>Izvrsne komunikacijske vjetine</li>
+                        <li>Prilagodljivost </li>
+                        <li>Sposobnost prilagodavanja promjenama </li>
+                        <li>Pristupacan </li>
+                        <li>Dobra fizička sprema</li>
+                        <li>Timski sportovi </li>
+                        <li>Snalazljiv u organizaciji timova ili grupa i u suradivanji s istima </li>
+                        <li>Sposoban sam simultano obavljati poslove i projekte</li>
+                        <li>Praktičko iskustvo</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <h1 style="text-align: center;">Jedne od najdražih fotografija iz albuma</h1>
+    <div class="container">
+        <span style="padding-right: 25px;"><img src="slikaSSA.png" class="img-responsive" height="150px" width="400px"></span>
+        <span style="padding-right: 25px;"><img src="slikaSSB.jpg" class="img-responsive" height="150px" width="400px"></span>
+        <span style="padding-right: 25px;"><img src="slikaSSC.bmp" class="img-responsive" height="150px" width="400px"></span>
+    </div>
+    <hr>
+    <div class="modal">
+        <span class="close">X</span>
+        <img class="modalImage" id="img01">
+    </div>
+    <script>
+        var modalEle = document.querySelector(".modal");
+        var modalImage = document.querySelector(".modalImage");
+        Array.from(document.querySelectorAll(".img-responsive")).forEach(item => {
+            item.addEventListener("click", event => {
+                modalEle.style.display = "block";
+                modalImage.src = event.target.src;
+            });
+        });
+        Array.from(document.querySelectorAll(".gif-responsive")).forEach(item => {
+            item.addEventListener("click", event => {
+                modalEle.style.display = "block";
+                modalImage.src = event.target.src;
+            });
+        });
+
+        document.querySelector(".close").addEventListener("click", () => {
+            modalEle.style.display = "none";
+        });
+        $(document).on('keydown', function(event) {
+            if (event.key == "Escape") {
+                modalEle.style.display = "none";
+            }
+        });
+    </script>
+
+    <footer>
+        <p>Web stranica izrađena za vrijeme pohađanja Fakulteta elektrotehnike, računarstva i informacijskih tehnologija Osijek u sklopu kolegija <a href="https://www.ferit.unios.hr/studiji/strucni-studij/SR601/53#anc" style="color: white;"> Multimedijska tehnika</a></p>
+        <p><a href="https://www.ferit.unios.hr" style="color: white;">FERIT </a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>MMT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="myNavbar">
+            <ul class="nav">
+                <li><a href="luka.html" id="luka">Luka Valentić </a> </li>
+                <li><a href="stjepan.html" id="stjepan">Stjepan Strmečki</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <img src="luka1.jpg" class="img-responsive" height="200px" width="200px">
+        </div>
+        <div class="text">
+            <p>Ime i prezime: Luka Valentić</p>
+            <p>Datum rođenja: 26.07.1999.</p>
+            <p>Spol: Muški</p>
+            <p>Hobi: <a href="https://hr.wikipedia.org/wiki/Ples">Ples</a> <a href="https://hr.wikipedia.org/wiki/Nogomet">nogomet</a></p>
+            <p><a href="https://www.osijek.hr/">Mjesto rođenja: Osijek</a></p>
+            <p><a href="https://www.osijek.hr/">Mjesto stanovanja: Osijek</a></p>
+            <p><a href="http://os-asenoa-os.skole.hr/">Osnovna škola: OŠ Augusta Šenoa Osije</a></p>
+            <p><a href="http://elpros.net/">Srednja škola: Elektrotehnička i prometna škola Osijek</a></p>
+            <p><a href="https://www.ferit.unios.hr/">Fakultet: FERIT</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="ff5 container-fluid">
+        <div>
+            <div class="container">
+                <h2>Radno iskustvo</h2>
+                <ul>
+                    <h4>Web developer - IDP</h4>
+                    <li>IDP - 07. TRAVNJA 2018. – 20. TRAVNJA 2018. – Sabadell, Španjolska</li>
+                    <h4>Spasilac na plaži i bazenu</h4>
+                    <li>Udruga spasilaca na vodi USVO - 11. LIPNJA 2017. – 31. KOLOVOZA 2017. – Osijek, Hrvatska </li>
+                    <h4>Spasilac na plaži i bazenu</h4>
+                    <li>Udruga spasilaca na vodi USVO - 14. LIPNJA 2018. – 31. KOLOVOZA 2018. – Osijek, Hrvatska</li>
+                    <h4>Spasilac na plaži i bazenu</h4>
+                    <li>Udruga spasilaca na vodi USVO - 14. LIPNJA 2019. – 31. KOLOVOZA 2019. – Osijek, Hrvatska </li>
+                    <h4>Dostavljač na biciklu</h4>
+                    <li>Pauza HR - 31. LISTOPADA 2019. – 10. STUDENOGA 2020. – Osijek, Hrvatska </li>
+                    <h4>Skladišni radnik</h4>
+                    <li>Crveni Križ Osijek - 01. SRPNJA 2021. – 31. SRPNJA 2021. – Osijek, Hrvatska</li>
+                </ul>
+                <h2>Digitalne vještine</h2>
+                <ul>
+                    <li>Osnove 3D modeliranja (Blender) </li>
+                    <li>Poznavanje rada u Visual Studio te Visual Studio Code okruenju</li>
+                    <li>Društvene mreže (Facebook, Instagram, Viber, WhatsApp, Skype)</li>
+                    <li>Poznavanje Python(Django)</li>
+                    <li>Dobro znanje rada u HTML, CSS, JavaScript programskim jezicima </li>
+                    <li>MS Office (MS Word, MS Powerpoint, MS Excel, MS Publisher, MS Outlook, MS Access, MS Teams) </li>
+                    <li>Google (Google Meet, Google Docs, Google Classrom, Google Forms, Google Drive, Google Slide)</li>
+                    <li>Rad u programu Canva </li>
+                    <li>MS Office (Word Excel PowerPoint)</li>
+                    <li>Osnove programiranja (Python, C++, C#)</li>
+                    <li>Komunikacijski programi (Skype Zoom TeamViewer)
+                    </li>
+                </ul>
+                <h2>Osobne vještine</h2>
+                <ul>
+                    <li>Timski rad
+                        <li>Voditelj plesnog tečaja </li>
+                        <li>Sposobna raditi u timu</li>
+                        <li>S lakocom prihvacam i rjesavam nove izazove kroz koje napredujem </li>
+                        <li>Dobro organiziran </li>
+                        <li>Izvrsne komunikacijske vjetine</li>
+                        <li>Prilagodljivost </li>
+                        <li>Spo sobnost prilagodavanja promjenama </li>
+                        <li>Pristupacna </li>
+                        <li>Plivanje </li>
+                        <li>Timski sportovi </li>
+                        <li>Snalazljiva u organizaciji timova ili grupa i u suradivanju s istima </li>
+                        <li>Sposobna sam simultano obavljati poslove i projekte</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <h1 style="text-align: center;">Jedne od najdražih fotografija iz albuma</h1>
+    <div class="container">
+        <span style="padding-right: 25px;"><img src="slika1.png" class="img-responsive" height="150px" width="400px"></span>
+        <span style="padding-right: 25px;"><img src="slika1.jpg" class="img-responsive" height="150px" width="400px"></span>
+        <span style="padding-right: 25px;"><img src="slika3.bmp" class="img-responsive" height="150px" width="400px"></span>
+    </div>
+    <hr>
+    <div class="modal">
+        <span class="close">X</span>
+        <img class="modalImage" id="img01">
+    </div>
+    <script>
+        var modalEle = document.querySelector(".modal");
+        var modalImage = document.querySelector(".modalImage");
+        Array.from(document.querySelectorAll(".img-responsive")).forEach(item => {
+            item.addEventListener("click", event => {
+                modalEle.style.display = "block";
+                modalImage.src = event.target.src;
+            });
+        });
+        Array.from(document.querySelectorAll(".gif-responsive")).forEach(item => {
+            item.addEventListener("click", event => {
+                modalEle.style.display = "block";
+                modalImage.src = event.target.src;
+            });
+        });
+
+        document.querySelector(".close").addEventListener("click", () => {
+            modalEle.style.display = "none";
+        });
+        $(document).on('keydown', function(event) {
+            if (event.key == "Escape") {
+                modalEle.style.display = "none";
+            }
+        });
+    </script>
+
+    <footer>
+        <p>Web stranica izrađena za vrijeme pohađanja Fakulteta elektrotehnike, računarstva i informacijskih tehnologija Osijek u sklopu kolegija <a href="https://www.ferit.unios.hr/studiji/strucni-studij/SR601/53#anc" style="color: white;"> Multimedijska tehnika</a></p>
+        <p><a href="https://www.ferit.unios.hr" style="color: white;">FERIT </a></p>
+    </footer>
+</body>
+
+</html>
