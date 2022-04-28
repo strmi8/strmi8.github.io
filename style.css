@@ -1,20 +1,14 @@
-.myNavbar {
-    background-color: #181b1f;
-    overflow: auto;
-    width: 100%;
-}
-
 ul h4 {
     color: rgb(40, 30, 70);
 }
 
-.myNavbar a {
+.navbar-nav a {
     float: left;
-    padding: 5px;
+    padding-right: 20px;
     color: rgb(223, 223, 223);
     text-decoration: none;
     font-size: 25px;
-    width: 33.3%;
+    width: 100%;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -45,25 +39,24 @@ ul h4 {
     height: auto
 }
 
+.row {
+    font-size: small;
+}
+
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.text a {
-    color: black;
-}
-
-.text .text a {
-    font-size: xx-large;
+.text {
+    font-size: large;
     padding-left: 20px;
 }
 
-.container-fluid {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+.text a {
+    color: black;
+    text-decoration: none;
 }
 
 footer {
